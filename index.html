@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <div class="container">
+        <h2>SPLI<span> <br> TTER</span></h2>
+        <div class="space">
+            <div class="content">
+                <div class="tip">
+                    <div class="bill">
+                        <h4>Bill</h4>
+                        <div class="avatar">
+                            <img src="./images/icon-dollar.svg" alt=''/>
+                            <input type="number" placeholder="0" class="totalBill">
+                        </div>
+                    </div>
+                    <div class="tipDiv">
+                        <h4>Select Tip %</h4>
+                        <div class="tipSelector">
+                            <button class="fivePercent">5%</button>
+                            <button class="tenPercent">10%</button>
+                            <button class="fifthPercent">15%</button>
+                            <button class="twoFivePercent">25%</button>
+                            <button class="halfPercent">50%</button>
+                            <input type="number" placeholder="Custom" class="customPercent">
+                        </div>
+                    </div>
+                    <div class="count">
+                        <h5>Number of people</h5>
+                        <div class="people">
+                            <img src="./images/icon-person.svg" alt=''/>
+                             <input type="number" placeholder="0" class="peopleCount">
+                        </div>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="tipAmount">
+                        <h5>Tip Amount <br><span>/ person</span></h5>
+                        <h3 class="pricing">$0.00</h3>
+                    </div>
+                    <div class="tipAmount">
+                        <h5>Total <br><span>/ person</span></h5>
+                        <h3 class="adjust">$0.00</h3>
+                    </div>
+                    <button class="reset">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <script src="calculator.js"></script>   
+</body>
+</html>

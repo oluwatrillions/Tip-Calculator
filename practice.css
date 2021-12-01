@@ -1,0 +1,262 @@
+:root {
+  --cyan: hsl(172, 67%, 45%);
+  --verydarkcyan: hsl(183, 100%, 15%);
+  --darkgrayishcyan: hsl(186, 14%, 43%);
+  --darkergrayishcyan: hsl(184, 14%, 56%);
+  --lightgrayishcyan: hsl(185, 41%, 84%);
+  --lightergrayishcyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  font-family: "Space Mono";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1440px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--lightgrayishcyan);
+}
+
+.container h2 {
+  text-align: center;
+  padding-top: 17vh;
+  color: var(--darkgrayishcyan);
+}
+
+.space {
+  width: 760px;
+  height: 400px;
+  background: var(--white);
+  margin-left: 17.5vw;
+  margin-top: 80px;
+  padding-left: 5px;
+  padding-top: 11px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  display: grid;
+  width: 750px;
+  height: 380px;
+  grid-template-columns: auto auto;
+  column-gap: 30px;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.tip {
+  background: var(--white);
+  width: 350px;
+  height: 360px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.bill h4 {
+  margin-bottom: 8px;
+  opacity: 0.6;
+}
+
+.amount {
+  width: 350px;
+  height: 360px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background: green;
+  padding-top: 5vh;
+}
+
+.amount {
+  display: block;
+  background: var(--verydarkcyan);
+}
+
+.tipAmount {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+  color: var(--lightgrayishcyan);
+  font-size: 14px;
+  height: 50px;
+}
+
+.tipAmount span {
+  color: var(--darkergrayishcyan);
+  font-size: 11px;
+}
+
+.pricing {
+  font-size: 40px;
+  margin-top: -15px;
+  margin-bottom: 30px;
+  color: var(--cyan);
+  box-sizing: border-box;
+}
+
+.adjust {
+  font-size: 40px;
+  margin-top: -15px;
+  color: var(--cyan);
+}
+
+.reset {
+  margin-top: 6vh;
+  margin-left: 9%;
+  width: 280px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background: var(--cyan);
+  color: var(--verydarkcyan);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.tip {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 5px;
+  background: var(--lightergrayishcyan);
+  width: 310px;
+  height: 43px;
+}
+
+.avatar:hover {
+  border: 2px solid var(--cyan);
+  border-radius: 5px;
+}
+
+.avatar img {
+  width: 20px;
+  height: 30px;
+  background-color: inherit;
+  padding-left: 10px;
+  padding-top: 9px;
+  border: none;
+  opacity: 0.8;
+  color: var(--verydarkcyan);
+}
+
+.avatar input {
+  width: 280px;
+  height: 40px;
+  font-size: 24px;
+  text-align: right;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--verydarkcyan);
+}
+
+.tipSelector {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.tipSelector button {
+  width: 96px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  background: var(--verydarkcyan);
+  font-size: 20px;
+}
+
+button:hover {
+  background: var(--cyan);
+  border: 1px solid var(--cyan);
+  cursor: pointer;
+}
+
+.tipSelector input {
+  width: 96px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  background: var(--lightergrayishcyan);
+  font-size: 18px;
+  color: var(--verydarkcyan);
+  font-size: 24px;
+  background-color: transparent;
+  outline: none;
+}
+
+.tipSelector input:hover {
+  border: 2px solid var(--cyan);
+}
+
+.tipDiv {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.tipDiv h4 {
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+
+.count h5 {
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.people input {
+  width: 280px;
+  height: 40px;
+  text-align: right;
+  border-radius: 5px;
+  border: none;
+  background: inherit;
+  color: var(--verydarkcyan);
+  font-size: 24px;
+  background-color: transparent;
+  outline: none;
+}
+
+.count {
+  box-sizing: border-box;
+}
+
+.people {
+  display: flex;
+  border-radius: 5px;
+  background: var(--lightergrayishcyan);
+}
+
+.people:hover {
+  border: 2px solid var(--cyan);
+  border-radius: 5px;
+}
+
+.people img {
+  width: 17px;
+  height: 20px;
+  margin-top: 10px;
+  opacity: 0.6;
+  background: inherit;
+  margin-left: 8px;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.warning {
+  border: 2px solid red;
+}
