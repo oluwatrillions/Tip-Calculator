@@ -28,7 +28,7 @@ tenPercent.addEventListener('click', function () {
     const peopleCount = document.querySelector('.peopleCount').value
     const bill = document.querySelector('.totalBill').value
     const tip = document.querySelector('.pricing').textContent =(parseFloat(bill * tipPercentile)/parseFloat(peopleCount)).toFixed(2)
-    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) + parseFloat(tip)) / parseFloat(peopleCount)).toFixed(2)
+    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) / parseFloat(peopleCount)) + parseFloat(tip)).toFixed(2)
     
     if (peopleCount > 0) {
         people.classList.add('success');
@@ -41,7 +41,7 @@ fifthPercent.addEventListener('click', function () {
     const peopleCount = document.querySelector('.peopleCount').value
     const bill = document.querySelector('.totalBill').value
     const tip = document.querySelector('.pricing').textContent =(parseFloat(bill * tipPercentile)/parseFloat(peopleCount)).toFixed(2)
-    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) + parseFloat(tip)) / parseFloat(peopleCount)).toFixed(2)
+    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) / parseFloat(peopleCount)) + parseFloat(tip)).toFixed(2)
     
     if (peopleCount > 0) {
         people.classList.add('success');
@@ -54,7 +54,7 @@ twoFivePercent.addEventListener('click', function () {
     const peopleCount = document.querySelector('.peopleCount').value
     const bill = document.querySelector('.totalBill').value
     const tip = document.querySelector('.pricing').textContent =(parseFloat(bill * tipPercentile)/parseFloat(peopleCount)).toFixed(2)
-    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) + parseFloat(tip)) / parseFloat(peopleCount)).toFixed(2)
+    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) / parseFloat(peopleCount)) + parseFloat(tip)).toFixed(2)
     
     if (peopleCount > 0) {
         people.classList.add('success');
@@ -67,7 +67,7 @@ halfPercent.addEventListener('click', function () {
     const peopleCount = document.querySelector('.peopleCount').value
     const bill = document.querySelector('.totalBill').value
     const tip = document.querySelector('.pricing').textContent =(parseFloat(bill * tipPercentile)/parseFloat(peopleCount)).toFixed(2)
-    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) + parseFloat(tip)) / parseFloat(peopleCount)).toFixed(2)
+    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) / parseFloat(peopleCount)) + parseFloat(tip)).toFixed(2)
     
     if (peopleCount > 0) {
         people.classList.add('success');
@@ -80,7 +80,7 @@ function customPercentile() {
     const peopleCount = document.querySelector('.peopleCount').value
     const bill = document.querySelector('.totalBill').value
     const tip = document.querySelector('.pricing').textContent =(parseFloat(bill * tipPercentile)/parseFloat(peopleCount)).toFixed(2)
-    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) + parseFloat(tip)) / parseFloat(peopleCount)).toFixed(2)
+    const billPerPerson = document.querySelector('.adjust').textContent = ((parseFloat(bill) / parseFloat(peopleCount)) + parseFloat(tip)).toFixed(2)
     
     if (peopleCount > 0) {
         people.classList.add('success');
@@ -91,4 +91,7 @@ function customPercentile() {
 reset.addEventListener('click', function () {
     const tip = document.querySelector('.pricing').textContent = `$0.00`
     const billPerPerson = document.querySelector('.adjust').textContent = `$0.00`
+    const bill = document.querySelector('.totalBill').value = 0
+    const custom = document.querySelector('.customPercent').value = 'Custom'
+    const peopleCount = document.querySelector('.peopleCount')
 })
