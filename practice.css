@@ -120,6 +120,10 @@
   font-size: 16px;
 }
 
+.reset:hover {
+  background: rgb(108, 221, 221);
+}
+
 .tip {
   padding: 20px;
   box-sizing: border-box;
@@ -178,9 +182,13 @@
 }
 
 button:hover {
-  background: var(--cyan);
+  background: rgb(108, 221, 221);
   border: 1px solid var(--cyan);
   cursor: pointer;
+}
+
+button:focus {
+  background: var(--cyan);
 }
 
 .tipSelector input {
@@ -233,10 +241,16 @@ button:hover {
   box-sizing: border-box;
 }
 
+.span {
+  float: right;
+  color: red;
+}
+
 .people {
   display: flex;
   border-radius: 5px;
   background: var(--lightergrayishcyan);
+  border: 2px solid rgb(214, 147, 147);
 }
 
 .people:hover {
@@ -257,6 +271,12 @@ input:hover {
   cursor: pointer;
 }
 
-.warning {
-  border: 2px solid red;
+.success {
+  border: none;
+}
+
+.spanDex {
+  float: right;
+  color: white;
+  opacity: 1;
 }
