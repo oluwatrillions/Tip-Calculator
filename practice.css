@@ -10,10 +10,6 @@
   font-family: "Space Mono";
 }
 
-body {
-  min-width: fit-content;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -285,4 +281,13 @@ input:hover {
   float: right;
   color: white;
   opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 1000px;
+    height: 100vh;
+    margin: 0;
+    padding-left: 0;
+  }
 }
