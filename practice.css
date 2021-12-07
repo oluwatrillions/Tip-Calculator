@@ -109,6 +109,14 @@
   color: var(--cyan);
 }
 
+.pricing span {
+  font-size: 40px;
+}
+
+.adjust span {
+  font-size: 40px;
+}
+
 .reset {
   margin-top: 6vh;
   margin-left: 10%;
