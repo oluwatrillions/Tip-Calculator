@@ -111,10 +111,12 @@
 
 .pricing span {
   font-size: 40px;
+  color: var(--cyan);
 }
 
 .adjust span {
   font-size: 40px;
+  color: var(--cyan);
 }
 
 .reset {
